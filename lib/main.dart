@@ -5,6 +5,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 void main() {
   runApp(MaterialApp(
+    theme: ThemeData(fontFamily: "PlusJakartaSans",
+    ),
       home: BlocProvider(
     create: (context) => OnboardingCubit(),
     child: OnboreingScreen(),
