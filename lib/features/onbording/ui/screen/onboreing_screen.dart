@@ -1,3 +1,4 @@
+import 'package:e_commerce/core/routing/routes.dart';
 import 'package:e_commerce/core/theme/colors.dart';
 import 'package:e_commerce/core/theme/text_style.dart';
 import 'package:e_commerce/features/onbording/data/onbording_repo.dart';
@@ -65,9 +66,13 @@ class OnboreingScreen extends StatelessWidget {
                     onbordingList[state.currentIndex].rightButtonTitle != null,
                 child: Expanded(
                   child: GestureDetector(
-                    onTap: context
-                        .read<OnboardingCubit>()
-                        .goToLoginScreen(context),
+                    onTap: () {
+                          goToLgin(context);
+
+                      // context
+                      //     .read<OnboardingCubit>()
+                      //     .goToLoginScreen(contextpage);
+                    },
                     child: Container(
                       margin: const EdgeInsets.symmetric(horizontal: 4),
                       alignment: Alignment.center,
@@ -109,6 +114,10 @@ class OnboreingScreen extends StatelessWidget {
         );
       },
     );
+  }
+
+  void goToLgin(BuildContext context) {
+     Navigator.pushNamed( context ,Routes.login);
   }
 
   Widget _buildDotsIndicator() {
