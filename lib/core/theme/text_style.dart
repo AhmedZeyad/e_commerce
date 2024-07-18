@@ -55,22 +55,38 @@ class MyTextStyle {
     fontSize: 16,
     fontWeight: FontWeightHelper.regular,
   );
-//?  caption
-
-  static const TextStyle font12RegularGreyD = TextStyle(
+  static const TextStyle font16RegularGreyD = TextStyle(
     color: MyColors.greyD_150,
-    fontSize: 12,
+    fontSize: 16,
     fontWeight: FontWeightHelper.regular,
   );
-  static const TextStyle font12SemiBoldWhite = TextStyle(
+//?  caption
+// update font for tes.  to 14
+
+  static const TextStyle font14RegularGreyD = TextStyle(
+    color: MyColors.greyD_150,
+    fontSize: 14,
+    fontWeight: FontWeightHelper.regular,
+  );
+  static const TextStyle font14RegularWhite = TextStyle(
     color: MyColors.white,
-    fontSize: 12,
+    fontSize: 14,
     fontWeight: FontWeightHelper.regular,
   );
-  static const TextStyle font12SemiBoldBlack = TextStyle(
+  static const TextStyle font14SemiregularWhite = TextStyle(
+    color: MyColors.white,
+    fontSize: 14,
+    fontWeight: FontWeightHelper.semiBold,
+  );
+  static const TextStyle font14SemiBoldBlue = TextStyle(
+    color: MyColors.blue,
+    fontSize: 14,
+    fontWeight: FontWeightHelper.semiBold,
+  );
+  static const TextStyle font14SemiBoldBlack = TextStyle(
     color: MyColors.backgroundColor,
-    fontSize: 12,
-    fontWeight: FontWeightHelper.regular,
+    fontSize: 14,
+    fontWeight: FontWeightHelper.semiBold,
   );
 //? overline
   static const TextStyle font10SemiBoldWhite = TextStyle(
