@@ -1,0 +1,30 @@
+#  Todo
+  UI
+    # Done  handel uncorect user name and emil
+    # Done  update app hender make it wiget 
+    # Done   how to make  the Rech text clickale
+
+Logic
+# Todo:
+    # Done  handel stat of rong username and pass 
+    # Done  add passwoed vsiblty icon 
+    # Done  hanel login respons
+    # Done  update names of cubit , repo , model and webservice
+    # Done  comlete  singup and fonget password button
+    # Done  issue  github
+      #!  when i check the code i found that you password
+    #! validation in !login but It was supposed to be on the sign-up page, not here, 
+    #! so you need 
+    # Done - [ √ ]  put it on the sign-up screen.
+    # Done - [ √ ] check login buton work  without any issues     
+
+
+
+Data
+# Todo 
+    # Done  model
+    # Done  reposetore
+    # Done  webservice
+
+
+ 

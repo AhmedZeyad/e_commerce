@@ -1,4 +1,4 @@
-import 'package:e_commerce/features/onbording/data/onbording_model.dart';
+import 'onbording_model.dart';
 
 List<OnbordingModel> onbordingList = [
   OnbordingModel(

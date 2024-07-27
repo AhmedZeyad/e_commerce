@@ -2,7 +2,7 @@ name: e_commerce
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -19,7 +19,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.4.3 <4.0.0'
+  sdk: ">=3.4.3 <4.0.0"
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -30,7 +30,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -46,11 +45,10 @@ dependencies:
   flutter_secure_storage: ^9.2.2
   # shared_preferences is used to make storg small value
   shared_preferences: ^2.2.3
-
+  # flutter_native_splash is used to make splash screen
   flutter_native_splash: ^2.4.1
-
-
-
+  # flutter_screenutil is used to make responsive design
+  # flutter_screenutil: ^5.9.3
 
 dev_dependencies:
   flutter_test:
@@ -68,7 +66,6 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
@@ -91,42 +88,42 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-      - family: PlusJakartaSans
-        fonts:
-        # 
-          - asset: assets/fonts/plus_lakarta_sans/PlusJakartaSans-Regular.ttf
-          - asset: assets/fonts/plus_lakarta_sans/PlusJakartaSans-Bold.ttf
-            weight: 700
-          - asset: assets/fonts/plus_lakarta_sans/PlusJakartaSans-BoldItalic.ttf
-            weight: 700
-            style: italic
-          - asset: assets/fonts/plus_lakarta_sans/PlusJakartaSans-ExtraBold.ttf
-            weight: 800
-          - asset: assets/fonts/plus_lakarta_sans/PlusJakartaSans-ExtraBoldItalic.ttf
-            weight: 800
-            style: italic
-          - asset: assets/fonts/plus_lakarta_sans/PlusJakartaSans-ExtraLight.ttf
-            weight: 200
-          - asset: assets/fonts/plus_lakarta_sans/PlusJakartaSans-ExtraLightItalic.ttf
-            weight: 200
-            style: italic
-          - asset: assets/fonts/plus_lakarta_sans/PlusJakartaSans-Italic.ttf
-            style: italic
-          - asset: assets/fonts/plus_lakarta_sans/PlusJakartaSans-Light.ttf
-            weight: 300
-          - asset: assets/fonts/plus_lakarta_sans/PlusJakartaSans-LightItalic.ttf
-            weight: 300
-            style: italic
-          - asset: assets/fonts/plus_lakarta_sans/PlusJakartaSans-Medium.ttf
-            weight: 500
-          - asset: assets/fonts/plus_lakarta_sans/PlusJakartaSans-MediumItalic.ttf
-            weight: 500
-            style: italic
-          - asset: assets/fonts/plus_lakarta_sans/PlusJakartaSans-SemiBold.ttf
-            weight: 600
-          - asset: assets/fonts/plus_lakarta_sans/PlusJakartaSans-SemiBoldItalic.ttf
-            weight: 600
-            style: italic
+    - family: PlusJakartaSans
+      fonts:
+        #
+        - asset: assets/fonts/plus_lakarta_sans/PlusJakartaSans-Regular.ttf
+        - asset: assets/fonts/plus_lakarta_sans/PlusJakartaSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/plus_lakarta_sans/PlusJakartaSans-BoldItalic.ttf
+          weight: 700
+          style: italic
+        - asset: assets/fonts/plus_lakarta_sans/PlusJakartaSans-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/plus_lakarta_sans/PlusJakartaSans-ExtraBoldItalic.ttf
+          weight: 800
+          style: italic
+        - asset: assets/fonts/plus_lakarta_sans/PlusJakartaSans-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/plus_lakarta_sans/PlusJakartaSans-ExtraLightItalic.ttf
+          weight: 200
+          style: italic
+        - asset: assets/fonts/plus_lakarta_sans/PlusJakartaSans-Italic.ttf
+          style: italic
+        - asset: assets/fonts/plus_lakarta_sans/PlusJakartaSans-Light.ttf
+          weight: 300
+        - asset: assets/fonts/plus_lakarta_sans/PlusJakartaSans-LightItalic.ttf
+          weight: 300
+          style: italic
+        - asset: assets/fonts/plus_lakarta_sans/PlusJakartaSans-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/plus_lakarta_sans/PlusJakartaSans-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/plus_lakarta_sans/PlusJakartaSans-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/plus_lakarta_sans/PlusJakartaSans-SemiBoldItalic.ttf
+          weight: 600
+          style: italic
 
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/plus_lakarta_sans/#from-packages
