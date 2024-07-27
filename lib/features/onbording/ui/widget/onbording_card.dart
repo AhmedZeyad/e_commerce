@@ -1,14 +1,14 @@
-import 'package:e_commerce/core/theme/colors.dart';
-import 'package:e_commerce/core/theme/text_style.dart';
-import 'package:e_commerce/features/onbording/data/onbording_model.dart';
+import '../../../../core/theme/colors.dart';
+import '../../../../core/theme/text_style.dart';
+import '../../data/onbording_model.dart';
 import 'package:flutter/material.dart';
 
-class OnbordingWidget extends StatelessWidget {
+class OnbordingCard extends StatelessWidget {
   final OnbordingModel onbordingModel;
   void Function()? onTapLeftIcon;
   void Function()? onTapRightText;
 
-  OnbordingWidget(
+  OnbordingCard(
       {required this.onbordingModel, this.onTapLeftIcon, this.onTapRightText});
   @override
   Widget build(BuildContext context) {
@@ -46,7 +46,7 @@ class OnbordingWidget extends StatelessWidget {
                         : null,
                   ),
 
-                  // Image.asset("assets"),
+
                   Image.asset(onbordingModel.image),
                 ],
               ),

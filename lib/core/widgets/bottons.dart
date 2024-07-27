@@ -1,13 +1,12 @@
-import 'package:e_commerce/core/helper/size_helper.dart';
-import 'package:e_commerce/core/theme/colors.dart';
-import 'package:e_commerce/core/theme/text_style.dart';
+import '../helper/size_helper.dart';
+import '../theme/colors.dart';
+import '../theme/text_style.dart';
 import 'package:flutter/material.dart';
 
 fullButton(String text, VoidCallback onTap) {
   return GestureDetector(
     onTap: () {
       onTap();
-      print(height * 0.065);
     },
     child: Container(
       margin: const EdgeInsets.symmetric(horizontal: 4,vertical: 16),

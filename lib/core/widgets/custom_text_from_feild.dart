@@ -1,5 +1,5 @@
-import 'package:e_commerce/core/theme/colors.dart';
-import 'package:e_commerce/core/theme/text_style.dart';
+import '../theme/colors.dart';
+import '../theme/text_style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -9,30 +9,35 @@ class CustomTextFromFeild extends StatelessWidget {
   Color? fillColor;
   bool? isObscureText;
   bool? enabled;
-  String Function(String?) validator;
+  String? Function(String?) validator;
+  void Function(String)? onChanged;
   Widget? suffixIcon;
 
-  CustomTextFromFeild(
-      {required this.validator,
-      required this.hint,
-      required this.controller,
-      this.fillColor,
-      this.suffixIcon,
-      this.enabled,
-      this.isObscureText});
+  CustomTextFromFeild({
+    required this.validator,
+    required this.hint,
+    required this.controller,
+     this.onChanged,
+    this.fillColor,
+    this.suffixIcon,
+    this.enabled,
+    this.isObscureText,
+  });
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       enabled: enabled ?? true,
       obscureText: isObscureText ?? false,
       validator: validator,
+      autovalidateMode: AutovalidateMode.onUserInteraction,
       style: MyTextStyle.font16RegularWhite,
       controller: controller,
+      onChanged: onChanged,
       decoration: InputDecoration(
         filled: true,
         fillColor: fillColor ?? MyColors.greyD_50,
         suffixIcon: suffixIcon,
-                isDense: true,
+        isDense: true,
 
         contentPadding:
             const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
@@ -42,9 +47,11 @@ class CustomTextFromFeild extends StatelessWidget {
           borderSide: const BorderSide(color: MyColors.blac_50, width: 1),
         ),
         // *[errorBorder]
-        errorBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12.0),
-          borderSide: const BorderSide(color: MyColors.red, width: 1),
+        errorBorder: const OutlineInputBorder(
+          borderRadius: BorderRadius.all(
+            Radius.circular(12.0),
+          ),
+          borderSide: BorderSide(color: MyColors.red, width: 1),
         ),
         // *[enabledBorder]
         enabledBorder: const OutlineInputBorder(
@@ -56,6 +63,13 @@ class CustomTextFromFeild extends StatelessWidget {
         // *[focusedBorder]
         focusedBorder: const OutlineInputBorder(
           borderSide: BorderSide(color: MyColors.primaryColor, width: 1),
+          borderRadius: BorderRadius.all(
+            Radius.circular(12.0),
+          ),
+        ),
+
+        focusedErrorBorder: const OutlineInputBorder(
+          borderSide: BorderSide(color: MyColors.red, width: 1),
           borderRadius: BorderRadius.all(
             Radius.circular(12.0),
           ),

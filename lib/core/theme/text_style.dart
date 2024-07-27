@@ -1,5 +1,5 @@
-import 'package:e_commerce/core/helper/font_helper.dart';
-import 'package:e_commerce/core/theme/colors.dart';
+import '../helper/font_helper.dart';
+import 'colors.dart';
 import 'package:flutter/material.dart';
 
 //todo: add test style here --done
@@ -63,6 +63,16 @@ class MyTextStyle {
 //?  caption
 // update font for tes.  to 14
 
+  static const TextStyle font14RegularRed = TextStyle(
+    color: MyColors.red,
+    fontSize: 14,
+    fontWeight: FontWeightHelper.regular,
+  );
+  static const TextStyle font14RegularCyan = TextStyle(
+    color: MyColors.primaryColor,
+    fontSize: 14,
+    fontWeight: FontWeightHelper.regular,
+  );
   static const TextStyle font14RegularGreyD = TextStyle(
     color: MyColors.greyD_150,
     fontSize: 14,

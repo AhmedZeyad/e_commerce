@@ -1,7 +1,7 @@
-import 'package:e_commerce/core/helper/size_helper.dart';
-import 'package:e_commerce/core/routing/app_router.dart';
-import 'package:e_commerce/core/routing/routes.dart';
-import 'package:e_commerce/core/theme/colors.dart';
+import 'core/helper/size_helper.dart';
+import 'core/routing/app_router.dart';
+import 'core/routing/routes.dart';
+import 'core/theme/colors.dart';
 import 'package:flutter/material.dart';
 
 class EcomerceApp extends StatelessWidget {

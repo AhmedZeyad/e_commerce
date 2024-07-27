@@ -1,7 +1,6 @@
-import 'package:e_commerce/features/onbording/data/onbording_repo.dart';
-import 'package:e_commerce/features/onbording/logic/cubit/onbording_state.dart';
+import '../../data/onbording_repo.dart';
+import 'onbording_state.dart';
 import 'package:flutter/material.dart';
-import 'package:e_commerce/core/routing/routes.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class OnboardingCubit extends Cubit<OnboardingState> {

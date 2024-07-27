@@ -1,19 +1,19 @@
-import 'package:e_commerce/features/auth/data/repo/auth_rebo.dart';
-import 'package:e_commerce/features/auth/data/webservice/auth_webService.dart';
-import 'package:e_commerce/features/auth/logic/cubit/auth_cubit.dart';
+import '../../features/login/data/repo/login_rebo.dart';
+import '../../features/login/data/webservice/login_webService.dart';
+import '../../features/login/logic/cubit/login_cubit.dart';
 import 'package:get_it/get_it.dart';
 
 final getIt = GetIt.instance;
 setUpGetIt() {
   //? auth
-  getIt.registerLazySingleton<AuthWebservice>(
-    () => AuthWebservice(),
+  getIt.registerLazySingleton<LoginWebservice>(
+    () => LoginWebservice(),
   );
-  getIt.registerLazySingleton<AuthRebo>(
-    () => AuthRebo(
+  getIt.registerLazySingleton<LoginRebo>(
+    () => LoginRebo(
       authWebservice: getIt(),
     ),
   );
 
-  getIt.registerFactory<AuthCubit>(() => AuthCubit(authRebo: getIt()));
+  getIt.registerFactory<LoginCubit>(() => LoginCubit(authRebo: getIt()));
 }
