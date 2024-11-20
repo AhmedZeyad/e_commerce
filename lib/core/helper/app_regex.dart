@@ -24,4 +24,23 @@ class AppRegex {
   static bool hasMinLength(String password, int len) {
     return RegExp('^(?=.{$len,})').hasMatch(password);
   }
+
+  static bool emailRegex(String email) {
+    return RegExp(r'^.+@[a-zA-Z]+\.{1}[a-zA-Z]+(\.{0,1}[a-zA-Z]+)$')
+        .hasMatch(email);
+  }
+
+  static bool isEmailValid(String email) {
+    return RegExp(r'^.+@[a-zA-Z]+\.{1}[a-zA-Z]+(\.{0,1}[a-zA-Z]+)$')
+        .hasMatch(email);
+  }
+
+  static bool passwordRegex(String email) {
+    // the password must be at least 8 characters long
+    // and contain at least one uppercase letter,
+    // one lowercase letter, one number, and one special character
+    return RegExp(
+            r'^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$')
+        .hasMatch(email);
+  }
 }

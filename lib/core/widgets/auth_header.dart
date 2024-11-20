@@ -2,15 +2,16 @@ import '../../../../core/theme/text_style.dart';
 import '../../../../core/widgets/custom_text_button.dart';
 import 'package:flutter/material.dart';
 
+
 class AppHeader extends StatelessWidget {
   final String title;
   final String bode;
-  final String butonText;
+  final String buttonText;
   final void Function() onPressed;
   const AppHeader({
     required this.title,
     required this.bode,
-    required this.butonText,
+    required this.buttonText,
     required this.onPressed,
     super.key,
   });
@@ -39,8 +40,8 @@ class AppHeader extends StatelessWidget {
             ),
             myTestButton(
                 alignment: Alignment.centerRight,
-                text: butonText,
-                syle: MyTextStyle.font16RegularCyan,
+                text: buttonText,
+                style: MyTextStyle.font16RegularCyan,
                 onPressed: onPressed),
           ],
         ),

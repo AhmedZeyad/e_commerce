@@ -3,17 +3,17 @@ Widget myTestButton(
     {AlignmentGeometry alignment = Alignment.center,
     required String text,
     required VoidCallback onPressed,
-    required TextStyle syle}) {
+    required TextStyle style}) {
   return Padding(
-    padding: const EdgeInsets.symmetric(vertical: 12.0),
+    padding: const EdgeInsets.symmetric(vertical: 12.0,horizontal: 2),
     child: Align(
       alignment: alignment,
-      child: TextButton(
-        onPressed: 
+      child: GestureDetector(
+        onTap: 
           onPressed,
         child: Text(
           text,
-          style: syle,
+          style: style,
         ),
       ),
     ),

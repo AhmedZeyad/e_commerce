@@ -37,7 +37,7 @@ buildPageButton(void Function() onPressed) {
               myTestButton(
                   alignment: Alignment.centerRight,
                   text: "Forgot Password?",
-                  syle: MyTextStyle.font16MediumCyan,
+                  style: MyTextStyle.font16MediumCyan,
                   onPressed:onPressed
                   ),
               fullButton(

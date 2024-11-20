@@ -1,0 +1,33 @@
+welcome in TODO in Signup Screen Features 
+# ToDo: Logic
+
+    # done: CUBIT
+    # done: STATES
+    # done: controllers [ fullname,password,PasswoedConfirm, email ]
+    # done: password validator
+    # done: password confirmation 
+    # done: email validator
+    # done: fullname validator
+    # ToDo: 
+
+# ToDo: Data
+    # ToDo: MODEL
+    # ToDo: REPO
+    # ToDo: signup request body
+    # ToDo: signup response body
+    # ToDo: WEBSERVICE    # ToDo: 
+    # ToDo: 
+
+# ToDo: UI
+    # done:  password visibility    
+    # done:  PasswordConform visibility    
+    # done:  password requirement widget
+    # done:  show keyboard error
+    # ToDo:  loading to create account
+    # ToDo:  error message[password not match,you have account already,email and username required, there is not any account with this email,...]
+    # done:  signup button
+    # ToDo:  signup with google button
+    # done:  manage password visibility  
+    # done: the conform password disable when password is no correct
+    # ToDo: 
+#  !
