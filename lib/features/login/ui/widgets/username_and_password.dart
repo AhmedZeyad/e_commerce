@@ -1,7 +1,7 @@
 import '../../../../core/theme/colors.dart';
+import '../../../../core/widgets/auth_text_form_fild.dart';
 import '../../logic/cubit/login_cubit.dart';
 import '../../logic/cubit/login_state.dart';
-import 'text_input.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -17,11 +17,7 @@ class BuildUserNameAndPassword extends StatefulWidget {
 }
 
 class _BuildUserNameAndPasswordState extends State<BuildUserNameAndPassword> {
-  // bool? hasMinLength;
-  // bool? hasUppercase;
-  // bool? hasLowercase;
-  // bool? hasNumber;
-  // bool? hasSpecialCharacter;
+  
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<LoginCubit, LoginState>(builder: (context, state) {
@@ -32,22 +28,14 @@ class _BuildUserNameAndPasswordState extends State<BuildUserNameAndPassword> {
             key: cubit.formKey,
             child: Column(
               children: [
-                UserNameAndPasswoed(
+                AuthTextFromFild(
                   label: "User Name",
                   hint: "Enter your User Name",
                   controller: cubit.usernameController,
                   validator: cubit.validateUsername,
                 ),
-                UserNameAndPasswoed(
-                  onChanged: (password) {
-                    // hasLowercase = AppRegex.hasLowerCase(password);
-                    // hasUppercase = AppRegex.hasUpperCase(password);
-                    // hasMinLength = AppRegex.hasMinLength(password, 8);
-                    // hasNumber = AppRegex.hasNumber(password);
-                    // hasSpecialCharacter =
-                    //     AppRegex.hasSpecialCharacter(password);
-                    // setState(() {});
-                  },
+                AuthTextFromFild(
+               
                   suffixIcon: IconButton(
                     icon: widget.isObscureText
                         ? const Icon(
@@ -70,14 +58,7 @@ class _BuildUserNameAndPasswordState extends State<BuildUserNameAndPassword> {
                   controller: cubit.passwordController,
                   validator: cubit.validatePassword,
                 ),
-                //  const SizedBox(height: 12,),
-                // passValidation(
-                //   hasMinLength: hasMinLength,
-                //   hasUppercase: hasUppercase,
-                //   hasLowercase: hasLowercase,
-                //   hasNumber: hasNumber,
-                //   hasSpecialCharacter: hasSpecialCharacter,
-                // )
+                
               ],
             ),
           ),

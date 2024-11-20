@@ -33,6 +33,6 @@ class OnboreingScreen extends StatelessWidget {
     );
   }
   void goToLgin(BuildContext context) {
-    Navigator.pushNamed(context, Routes.login);
+    Navigator.pushReplacementNamed(context, Routes.login);
   }
 }

@@ -9,15 +9,15 @@ class CustomTextFromFeild extends StatelessWidget {
   Color? fillColor;
   bool? isObscureText;
   bool? enabled;
-  String? Function(String?) validator;
+  final String? Function(String?)? validator;
   void Function(String)? onChanged;
   Widget? suffixIcon;
 
   CustomTextFromFeild({
-    required this.validator,
     required this.hint,
     required this.controller,
-     this.onChanged,
+    this.validator,
+    this.onChanged,
     this.fillColor,
     this.suffixIcon,
     this.enabled,
@@ -68,12 +68,7 @@ class CustomTextFromFeild extends StatelessWidget {
           ),
         ),
 
-        focusedErrorBorder: const OutlineInputBorder(
-          borderSide: BorderSide(color: MyColors.red, width: 1),
-          borderRadius: BorderRadius.all(
-            Radius.circular(12.0),
-          ),
-        ),
+      
         hintText: hint,
         hintStyle: MyTextStyle.font14RegularGreyD,
       ),

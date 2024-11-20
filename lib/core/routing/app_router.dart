@@ -1,3 +1,6 @@
+import 'package:e_commerce/features/signup/ui/screen/signup_screen.dart';
+
+import '../../features/signup/logic/cubit/sign_up_cubit.dart';
 import '../di/dependancy_injection.dart';
 import 'routes.dart';
 import '../../features/home/ui/home_screen.dart';
@@ -18,6 +21,7 @@ class AppRouter {
             child: OnboreingScreen(),
           ),
         );
+
       case Routes.login:
         return MaterialPageRoute(
           builder: (_) {
@@ -27,6 +31,7 @@ class AppRouter {
             );
           },
         );
+
       case Routes.home:
         return MaterialPageRoute(
           builder: (_) => HomeScreen(),
@@ -36,12 +41,12 @@ class AppRouter {
       //     builder: (_) => ErrorScreen(),
       //   );
       case Routes.signUp:
-        return MaterialPageRoute(
-            builder: (context) => Scaffold(
-                  appBar: AppBar(
-                    title: Text('Sign Up'),
-                  ),
-                ));
+        return MaterialPageRoute(builder: (context) {
+          return BlocProvider(
+              create: (context) => getIt<SignUpCubit>(),
+            child: SignUpScreen(),
+          );
+        });
     }
     return null;
   }
