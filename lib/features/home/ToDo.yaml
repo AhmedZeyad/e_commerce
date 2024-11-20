@@ -1,0 +1,52 @@
+welcome in TODO in Signup Screen Features 
+# ToDo: Logic
+
+  # TODO: CUBIT
+  # TODO: STATES
+  # ToDo: 
+
+# ToDo: Data
+  # ToDo: MODEL
+    # ToDo: profile model 
+    # ToDo: category model
+    # ToDo: product model
+  # ToDo: REPO
+    # ToDo: products repo
+    # ToDo: categories repo
+    # ToDo: profile repo
+  # ToDo: signup request body
+
+
+# ToDo: UI
+  # ToDo: App bar with login and search icon and profile image
+  # ToDo: offers or events 
+    # ToDo: image
+    # ToDo: test h1
+    # ToDo: test h3
+    # ToDo: badge
+    # ToDo: current index
+    # ToDo: Scrollable      
+  # ToDo: categories
+    # ToDo: text h2 
+    # ToDo: text but to see all categories
+    # ToDo: image of category
+    # ToDo: text of category
+  # ToDo: products
+    # ToDo: text h2
+    # ToDo: text but to see all products
+    # ToDo: image of product
+    # ToDo: text of product
+    # ToDo: price of product
+    # ToDo: discount of product
+    # ToDo: main color of product with but to see all colors
+    # ToDo: favorite button
+  # ToDo:  button  of navigation bare
+    # ToDo: home
+    # ToDo: cart
+    # ToDo: categories
+    # ToDo: wishlist
+    # ToDo: profile 
+
+
+  # ToDo: 
+#  !
