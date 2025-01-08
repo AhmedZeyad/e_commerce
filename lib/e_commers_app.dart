@@ -14,8 +14,8 @@ class EcomerceApp extends StatelessWidget {
     width = MediaQuery.of(context).size.width;
     return MaterialApp(
       theme: ThemeData(scaffoldBackgroundColor: MyColors.backgroundColor),
-      initialRoute: Routes.signUp,
       // initialRoute: Routes.onboarding,
+      initialRoute: Routes.home,
       onGenerateRoute: appRouter.onGenerateRoute,
     );
   }

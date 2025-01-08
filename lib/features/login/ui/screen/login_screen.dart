@@ -21,22 +21,20 @@ class LoginScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // done
-
                   AppHeader(
-                      title: "Login",
-                      bode: "Don't have an account?",
-                      buttonText: "Sign Up",
-                      onPressed: () {
-                        _goToSignUp(context);
-                      }),
-
+                    title: "Login",
+                    bode: "Don't have an account?",
+                    buttonText: "Sign Up",
+                    onPressed: () {
+                      _goToSignUp(context);
+                    },
+                  ),
                   BuildUserNameAndPassword(),
-
-                  buildPageButton(() {
-                    _goToForgotPasswoed(context);
-                  }),
-
+                  buildPageButton(
+                    () {
+                      _goToForgotPassword(context);
+                    },
+                  ),
                   const SizedBox(height: 16),
                   MyRichText(),
                 ],
@@ -52,7 +50,7 @@ class LoginScreen extends StatelessWidget {
     Navigator.popAndPushNamed(context, Routes.signUp);
   }
 
-  _goToForgotPasswoed(context) {
-    Navigator.pushNamed(context, Routes.forgotPasswoed);
+  _goToForgotPassword(context) {
+    Navigator.pushNamed(context, Routes.forgotPassword);
   }
 }

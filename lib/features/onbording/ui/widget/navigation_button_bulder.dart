@@ -6,9 +6,9 @@ import '../../logic/cubit/onbording_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 class NavigationButton extends StatelessWidget {
-  void Function()? goToLgin;
-   NavigationButton({
-    required this.goToLgin
+  final void Function()? goToLogin;
+   const NavigationButton({
+    required this.goToLogin
     ,super.key});
 
   @override
@@ -24,11 +24,11 @@ class NavigationButton extends StatelessWidget {
             children: [
               Visibility(
                 visible:
-                    onbordingList[state.currentIndex].rightButtonTitle != null,
+                    onboardingList[state.currentIndex].rightButtonTitle != null,
                 child: Expanded(
                   child: GestureDetector(
                     onTap: 
-                          goToLgin
+                          goToLogin
 
                       
 ,
@@ -43,7 +43,7 @@ class NavigationButton extends StatelessWidget {
                           color: MyColors.backgroundColor,
                           borderRadius: BorderRadius.circular(18)),
                       child: Text(
-                          onbordingList[state.currentIndex].rightButtonTitle ??
+                          onboardingList[state.currentIndex].rightButtonTitle ??
                               "",
                           style: MyTextStyle.font16semiBoldWhite),
                     ),
@@ -63,7 +63,7 @@ class NavigationButton extends StatelessWidget {
                         color: MyColors.primaryColor,
                         borderRadius: BorderRadius.circular(18)),
                     child: Text(
-                        onbordingList[state.currentIndex].leftButtonTitle,
+                        onboardingList[state.currentIndex].leftButtonTitle,
                         style: MyTextStyle.font16semiBoldWhite),
                   ),
                 ),

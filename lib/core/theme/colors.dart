@@ -27,5 +27,6 @@ static const Color orange = Color(0xffF0821D);
 static const Color merigold = Color(0xffFFCB45);
 static const Color brown = Color(0xff5A1A05);
 static const Color pink = Color(0xffCE1DEB);
+static const Color mask = Color(0xff030303);
 }
 

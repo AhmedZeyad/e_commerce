@@ -20,10 +20,10 @@ class OnboardingCardBuilder extends StatelessWidget {
               onPageChanged: (value) {
                 context.read<OnboardingCubit>().onPageChanged(value);
               },
-              itemCount: onbordingList.length,
+              itemCount: onboardingList.length,
               itemBuilder: (context, index) {
                 return OnbordingCard(
-                  onbordingModel: onbordingList[index],
+                  onbordingModel: onboardingList[index],
                   onTapLeftIcon: context.read<OnboardingCubit>().prevPage,
                   onTapRightText: context.read<OnboardingCubit>().skip,
                 );
