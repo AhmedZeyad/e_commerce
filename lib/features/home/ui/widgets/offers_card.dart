@@ -21,17 +21,19 @@ class _OffersCardState extends State<OffersCard> {
   Widget build(BuildContext context) {
     return SizedBox(
       height: 200,
-      width: 400,
+      // width: 400,
       child: Stack(
         alignment: Alignment.bottomRight,
         children: [
           PageView.builder(
+            
             controller: _pageController,
             onPageChanged: (index) {
               setState(() {
                 currentCard = index; // Update the current card index
               });
             },
+            padEnds: true,
             itemCount:widget.cards.length,
             scrollDirection: Axis.horizontal,
             itemBuilder: (context, nweIndex) =>

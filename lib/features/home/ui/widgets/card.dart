@@ -21,9 +21,8 @@ class MyCard extends StatelessWidget {
         ).createShader(rect);
       },
       child: Container(
-        margin: const EdgeInsets.only(
-          left: 12,
-        ),
+                       margin: const EdgeInsets.symmetric(horizontal: 8), // Space between cards
+
         padding: const EdgeInsets.symmetric(horizontal: 16),
         width: 380,
         decoration: BoxDecoration(
@@ -37,7 +36,7 @@ class MyCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Spacer(
+            const Spacer(
               flex: 3,
             ),
             Container(
@@ -62,7 +61,7 @@ class MyCard extends StatelessWidget {
               cardModel.title,
               style: MyTextStyle.font24BoldBlack,
             ),
-            Spacer(
+            const Spacer(
               flex: 1,
             ),
           ],

@@ -25,4 +25,10 @@ List<LastProduct> lastProducts = [
     oldPrice:122.0 ,
     image: "assets/images/Rectangle 12.png",
   ),
+  LastProduct(
+    name: "Brown box Luxury Bag froe",
+    price: 98.45,
+    oldPrice:122.0 ,
+    image: "assets/images/Rectangle 12.png",
+  ),
 ];

@@ -13,7 +13,7 @@ class Categories extends StatelessWidget {
     return Column(
       spacing: 16,
       children: [
-        const SectionHeader(title: "Categories", buttonText: "See All"),
+        const SectionHeader(title: "Categories", buttonText: "SEE ALl"),
         Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: List.generate(

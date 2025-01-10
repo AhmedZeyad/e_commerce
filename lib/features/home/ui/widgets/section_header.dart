@@ -12,19 +12,22 @@ class SectionHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      crossAxisAlignment: CrossAxisAlignment.end,
-      children: [
-         Text(title, style: MyTextStyle.font22MediumWhite),
-        GestureDetector(
-          onTap: () {},
-          child: Text(
-            buttonText,
-            style: MyTextStyle.font16MediumCyan,
-          ),
-        )
-      ],
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 8.0),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: [
+           Text(title, style: MyTextStyle.font22MediumWhite),
+          GestureDetector(
+            onTap: () {},
+            child: Text(
+              buttonText,
+              style: MyTextStyle.font16MediumCyan,
+            ),
+          )
+        ],
+      ),
     );
   }
 }

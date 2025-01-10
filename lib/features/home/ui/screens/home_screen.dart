@@ -1,11 +1,13 @@
+
 import 'package:e_commerce/features/home/data/repo/card_data.dart';
 import 'package:e_commerce/features/home/ui/widgets/last_product.dart';
 import 'package:flutter/material.dart';
 
 import '../widgets/app_header.dart';
+import '../widgets/app_bottom_bar.dart';
 import '../widgets/categories.dart';
 import '../widgets/offers_card.dart';
-
+import '../widgets/section_header.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -13,26 +15,29 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: SafeArea(
-          minimum: const EdgeInsets.all(16),
-      child: Column(
-        spacing: 10,
-        children: [
-          const AppHeader(),
-          OffersCard(cards: cards),
-          // const Center(
-          //   child: Text('Home Screen',
-          //       style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold,color: Colors.white),),
-
-          // ),
-          const Categories(),
-           LastProductCard()
-        ],
+      body: SafeArea(
+        minimum: const EdgeInsets.all(20),
+        child: CustomScrollView(
+          slivers: [
+            const AppHeader(),
+            SliverList(
+              delegate: SliverChildListDelegate(
+                [
+                  OffersCard(cards: cards),
+                  const Categories(),
+                  const SectionHeader(
+                      title: "List Product", buttonText: "SEE ALL"),
+                ],
+              ),
+            ),
+            const LastProductCard(),
+          ],
+        ),
       ),
-    ));
+      bottomNavigationBar: const AppBottomNav(),
+    );
   }
 }
-
 
 
 

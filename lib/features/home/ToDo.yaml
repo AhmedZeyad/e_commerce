@@ -13,17 +13,20 @@ welcome in TODO in Signup Screen Features
   # ToDo: MODEL
     # ToDo: profile model 
     # done: category model
-    # ToDo: product model
+    # doone: product model
     # done: card model
+    # done: bottom_bar_item
     
   # ToDo: REPO
-    # ToDo: products repo
-    # ToDo: categories repo
+    # done: products repo
+    # done: categories repo
     # ToDo: profile repo
+    # done: bottom_bar_item_data
+
     # ToDo: signup request body
 
 
-# ToDo: UI
+# Todo: UI
   # done: App bar with login and search icon and profile image
   # done: offers or events 
     # done: image
@@ -37,7 +40,7 @@ welcome in TODO in Signup Screen Features
     # done: text but to see all categories
     # done: image of category
     # done: text of category
-  # ToDo: products
+  # done: products
     # done: text h2
     # done: text but to see all products
     # done: image of product
@@ -46,13 +49,14 @@ welcome in TODO in Signup Screen Features
     # done: discount of product
     # done: main color of product with but to see all colors
     # done: favorite button
-  # ToDo:  button  of navigation bare
-    # ToDo: home
-    # ToDo: cart
-    # ToDo: categories
-    # ToDo: wishlist
-    # ToDo: profile 
+  # done:  button  of navigation bare
+    # done: home
+    # done: cart
+    # done: categories
+    # done: wishlist
+    # done: profile 
+    # Todo make it change the current Screen
+# done: Icon Helper
+# add icon helper to get icons easer
 
-
-  # ToDo: 
 #  !
