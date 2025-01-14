@@ -1,7 +1,6 @@
 import '../theme/colors.dart';
 import '../theme/text_style.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class CustomTextFromFeild extends StatelessWidget {
   String hint;
@@ -13,7 +12,7 @@ class CustomTextFromFeild extends StatelessWidget {
   void Function(String)? onChanged;
   Widget? suffixIcon;
 
-  CustomTextFromFeild({
+  CustomTextFromFeild({super.key, 
     required this.hint,
     required this.controller,
     this.validator,
@@ -44,7 +43,7 @@ class CustomTextFromFeild extends StatelessWidget {
         // *[disabledBorder]
         disabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12.0),
-          borderSide: const BorderSide(color: MyColors.blac_50, width: 1),
+          borderSide: const BorderSide(color: MyColors.black_50, width: 1),
         ),
         // *[errorBorder]
         errorBorder: const OutlineInputBorder(

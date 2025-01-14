@@ -12,7 +12,7 @@ class MyTextStyle {
     fontWeight: FontWeight.w700,
   );
   static const TextStyle font32BoldBlack = TextStyle(
-    color: MyColors.blac_50,
+    color: MyColors.black_50,
     fontSize: 32,
     fontWeight: FontWeight.w700,
   );
@@ -23,7 +23,7 @@ class MyTextStyle {
     fontWeight: FontWeightHelper.semiBold,
   );
  static const TextStyle font24BoldBlack = TextStyle(
-    color: MyColors.blac_50,
+    color: MyColors.black_50,
     fontSize: 24,
     fontWeight: FontWeight.w700,
   );
@@ -81,14 +81,14 @@ class MyTextStyle {
     fontWeight: FontWeightHelper.regular,
   );
   static const TextStyle font16RegularBlack = TextStyle(
-    color: MyColors.blac_50,
+    color: MyColors.black_50,
     fontSize: 16,
     fontWeight: FontWeightHelper.regular,
   );
 //?  caption
 // update font for tes.  to 14
   static const TextStyle font14RegularBlack = TextStyle(
-    color: MyColors.blac_50,
+    color: MyColors.black_50,
     fontSize: 14,
     fontWeight: FontWeightHelper.regular,
   );

@@ -3,22 +3,19 @@ import 'package:flutter/material.dart';
 
 import '../../data/repo/bottom_bar_item_data.dart';
 
-class AppBottomNav extends StatefulWidget {
+class AppBottomNav extends StatelessWidget {
+  final Function(int index) onTap;
+  final int pageIndex;
   const AppBottomNav({
+    required this.pageIndex,
+    required this.onTap,
     super.key,
   });
 
   @override
-  State<AppBottomNav> createState() => _AppBottomNavState();
-}
-
-class _AppBottomNavState extends State<AppBottomNav> {
-  int currentIndex = 0;
-
-  @override
   Widget build(BuildContext context) {
     return Container(
-        margin: EdgeInsets.symmetric(vertical: 8, horizontal: 20),
+        margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 20),
         height: 60,
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -27,15 +24,16 @@ class _AppBottomNavState extends State<AppBottomNav> {
             bottomBarItems.length,
             (index) => BottomBarItem(
               icon: bottomBarItems[index],
-              isSelected: index == currentIndex,
+              isSelected: index == pageIndex,
               onTap: () {
-                setState(() {
-                  currentIndex = index;
-                });
+                // setState(() {
+                // pageIndex = index;
+                // print(index);
+                onTap(index);
+                // });
               },
             ),
           ),
         ));
   }
 }
-

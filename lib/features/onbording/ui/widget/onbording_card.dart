@@ -9,7 +9,7 @@ class OnbordingCard extends StatelessWidget {
   void Function()? onTapRightText;
 
   OnbordingCard(
-      {required this.onbordingModel, this.onTapLeftIcon, this.onTapRightText});
+      {super.key, required this.onbordingModel, this.onTapLeftIcon, this.onTapRightText});
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -21,10 +21,10 @@ class OnbordingCard extends StatelessWidget {
         Expanded(
             flex: 2,
             child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 16),
-              padding: EdgeInsets.symmetric(horizontal: 10, vertical: 12),
+              margin: const EdgeInsets.symmetric(horizontal: 16),
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 12),
               decoration: BoxDecoration(
-                  color: MyColors.blac_50,
+                  color: MyColors.black_50,
                   borderRadius: BorderRadius.circular(32)),
               child: Column(
                 children: [

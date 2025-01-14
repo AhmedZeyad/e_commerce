@@ -1,10 +1,10 @@
 
 import 'package:e_commerce/features/signup/ui/screens/signup_screen.dart';
 
+import '../../features/home/ui/screens/frame_screen.dart';
 import '../../features/signup/logic/cubit/sign_up_cubit.dart';
 import '../di/dependancy_injection.dart';
 import 'routes.dart';
-import '../../features/home/ui/screens/home_screen.dart';
 import '../../features/login/logic/cubit/login_cubit.dart';
 import '../../features/login/ui/screen/login_screen.dart';
 import '../../features/onbording/logic/cubit/onbording_cubit.dart';
@@ -19,7 +19,7 @@ class AppRouter {
         return MaterialPageRoute(
           builder: (_) => BlocProvider(
             create: (context) => OnboardingCubit(),
-            child: OnboardingScreen(),
+            child: const OnboardingScreen(),
           ),
         );
 
@@ -28,14 +28,14 @@ class AppRouter {
           builder: (_) {
             return BlocProvider(
               create: (context) => getIt<LoginCubit>(),
-              child: LoginScreen(),
+              child: const LoginScreen(),
             );
           },
         );
 
       case Routes.home:
         return MaterialPageRoute(
-          builder: (_) => HomeScreen(),
+          builder: (_) => const FrameScreen(),
         );
       // default:
       //   return MaterialPageRoute(
@@ -45,7 +45,7 @@ class AppRouter {
         return MaterialPageRoute(builder: (context) {
           return BlocProvider(
               create: (context) => getIt<SignUpCubit>(),
-            child: SignUpScreen(),
+            child: const SignUpScreen(),
           );
         });
     }
@@ -54,6 +54,8 @@ class AppRouter {
 }
 
 class ErrorScreen extends StatelessWidget {
+  const ErrorScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

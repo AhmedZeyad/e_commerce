@@ -19,7 +19,7 @@ class DontIndicter extends StatelessWidget {
         return Container(
           margin: const EdgeInsets.symmetric(vertical: 24),
           decoration: BoxDecoration(
-              color: MyColors.blac_50, borderRadius: BorderRadius.circular(12)),
+              color: MyColors.black_50, borderRadius: BorderRadius.circular(12)),
           width: 50,
           height: 20,
           child: Row(

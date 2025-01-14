@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 
 class EcomerceApp extends StatelessWidget {
   final AppRouter appRouter;
-  EcomerceApp({required this.appRouter});
+  const EcomerceApp({super.key, required this.appRouter});
 
   @override
   Widget build(BuildContext context) {
