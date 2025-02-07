@@ -11,17 +11,36 @@ class MyTextStyle {
     fontSize: 32,
     fontWeight: FontWeight.w700,
   );
+  static const TextStyle font32BoldBlack = TextStyle(
+    color: MyColors.black_50,
+    fontSize: 32,
+    fontWeight: FontWeight.w700,
+  );
 
   static const TextStyle font32SemiBoldWhite = TextStyle(
     color: MyColors.white,
     fontSize: 32,
     fontWeight: FontWeightHelper.semiBold,
   );
-
+ static const TextStyle font24BoldBlack = TextStyle(
+    color: MyColors.black_50,
+    fontSize: 24,
+    fontWeight: FontWeight.w700,
+  );
+   static const TextStyle font22MediumWhite = TextStyle(
+    color: MyColors.white,
+    fontSize: 22,
+    fontWeight: FontWeightHelper.medium,
+  );
 //? BODY button
 
   static const TextStyle font16MediumWhite = TextStyle(
     color: MyColors.white,
+    fontSize: 16,
+    fontWeight: FontWeightHelper.medium,
+  );
+  static const TextStyle font16MediumBlack = TextStyle(
+    color: MyColors.backgroundColor,
     fontSize: 16,
     fontWeight: FontWeightHelper.medium,
   );
@@ -34,6 +53,7 @@ class MyTextStyle {
     color: MyColors.primaryColor,
     fontSize: 16,
     fontWeight: FontWeightHelper.medium,
+    
   );
   static const TextStyle font16semiBoldWhite = TextStyle(
     color: MyColors.white,
@@ -60,8 +80,18 @@ class MyTextStyle {
     fontSize: 16,
     fontWeight: FontWeightHelper.regular,
   );
+  static const TextStyle font16RegularBlack = TextStyle(
+    color: MyColors.black_50,
+    fontSize: 16,
+    fontWeight: FontWeightHelper.regular,
+  );
 //?  caption
 // update font for tes.  to 14
+  static const TextStyle font14RegularBlack = TextStyle(
+    color: MyColors.black_50,
+    fontSize: 14,
+    fontWeight: FontWeightHelper.regular,
+  );
 
   static const TextStyle font14RegularRed = TextStyle(
     color: MyColors.red,
@@ -83,7 +113,7 @@ class MyTextStyle {
     fontSize: 14,
     fontWeight: FontWeightHelper.regular,
   );
-  static const TextStyle font14SemiregularWhite = TextStyle(
+  static const TextStyle font14SemiBoldWhite = TextStyle(
     color: MyColors.white,
     fontSize: 14,
     fontWeight: FontWeightHelper.semiBold,
@@ -103,6 +133,11 @@ class MyTextStyle {
     fontSize: 10,
     color: MyColors.white,
     fontWeight: FontWeightHelper.semiBold,
+  );
+  static const TextStyle font10RegularGrey_100 = TextStyle(
+    fontSize: 10,
+    color: MyColors.grey_100,
+    fontWeight: FontWeightHelper.regular,
   );
   static const TextStyle font10SemiBoldGrey = TextStyle(
     fontSize: 10,

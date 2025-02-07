@@ -1,6 +1,6 @@
 import 'onbording_model.dart';
 
-List<OnbordingModel> onbordingList = [
+List<OnbordingModel> onboardingList = [
   OnbordingModel(
     leftIcon: 'assets/quickmart.png',
     rightText: 'Skip for now',

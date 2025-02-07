@@ -9,7 +9,7 @@ showLoadingDialog(context) {
       return Center(
         child: Container(
           decoration: BoxDecoration(
-              color: MyColors.blac_50, borderRadius: BorderRadius.circular(12)),
+              color: MyColors.black_50, borderRadius: BorderRadius.circular(12)),
           height: height * 0.3,
           width: width * 0.8,
           child: const Center(

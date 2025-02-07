@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 
 class EcomerceApp extends StatelessWidget {
   final AppRouter appRouter;
-  EcomerceApp({required this.appRouter});
+  const EcomerceApp({super.key, required this.appRouter});
 
   @override
   Widget build(BuildContext context) {
@@ -14,8 +14,8 @@ class EcomerceApp extends StatelessWidget {
     width = MediaQuery.of(context).size.width;
     return MaterialApp(
       theme: ThemeData(scaffoldBackgroundColor: MyColors.backgroundColor),
-      initialRoute: Routes.signUp,
       // initialRoute: Routes.onboarding,
+      initialRoute: Routes.home,
       onGenerateRoute: appRouter.onGenerateRoute,
     );
   }

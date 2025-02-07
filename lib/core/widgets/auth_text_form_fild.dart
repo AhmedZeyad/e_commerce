@@ -12,7 +12,7 @@ class AuthTextFromFild extends StatelessWidget {
   bool? enabled = true;
   String ?Function(String?) validator;
   void Function(String)? onChanged;
-  AuthTextFromFild({
+  AuthTextFromFild({super.key, 
   
     required this.validator,
     required this.label,

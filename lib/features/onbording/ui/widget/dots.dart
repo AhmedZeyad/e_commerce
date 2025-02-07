@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-class DotsOnbording extends StatelessWidget {
-  Color color;
-   DotsOnbording({super.key, required this.color});
+class DotsOnboarding extends StatelessWidget {
+  final Color color;
+   const DotsOnboarding({super.key, required this.color});
 
   @override
   Widget build(BuildContext context) {

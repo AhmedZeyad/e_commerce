@@ -3,36 +3,35 @@ import '../widget/navigation_button_bulder.dart';
 import '../widget/onboarding_card_builder.dart';
 import '../../../../core/routing/routes.dart';
 import '../../../../core/theme/colors.dart';
-import '../../../../core/theme/text_style.dart';
-import '../../data/onbording_repo.dart';
-import '../../logic/cubit/onbording_cubit.dart';
-import '../../logic/cubit/onbording_state.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
-class OnboreingScreen extends StatelessWidget {
+
+class OnboardingScreen extends StatelessWidget {
+  const OnboardingScreen({super.key});
+
   @override
+
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: MyColors.backgroundColor,
       body: SafeArea(
         child: Column(
           children: [
-            // the onbording widgets show here
+            // the onboarding widgets show here
             const OnboardingCardBuilder(),
-            //  the  boton of navigation onbording widgets show here
-            NavigationButton(goToLgin: () {
-              goToLgin(context);
+            //  the  button of navigation onbording widgets show here
+            NavigationButton(goToLogin: () {
+              goToLogin(context);
             }),
 
             //  the dote of current onbording widgets show here
-            DontIndecader(),
+            const DontIndicter(),
           ],
         ),
       ),
     );
   }
-  void goToLgin(BuildContext context) {
+  void goToLogin(BuildContext context) {
     Navigator.pushReplacementNamed(context, Routes.login);
   }
 }

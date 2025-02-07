@@ -8,7 +8,7 @@ import '../../logic/cubit/sign_up_cubit.dart';
 import '../../logic/cubit/sign_up_state.dart';
 import 'password_validation.dart';
 class PasswordTextFromFild extends StatefulWidget {
-  PasswordTextFromFild({
+  const PasswordTextFromFild({
     super.key,
     required this.passwordController,
     required this.passwordConfirmController,

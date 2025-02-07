@@ -1,0 +1,62 @@
+welcome in TODO in Signup Screen Features 
+
+
+# !New widget            Badge(child: Text('data'),),
+
+# ToDo: Logic
+
+  # TODO: CUBIT
+  # TODO: STATES
+  # ToDo: 
+
+# ToDo: Data
+  # ToDo: MODEL
+    # ToDo: profile model 
+    # done: category model
+    # doone: product model
+    # done: card model
+    # done: bottom_bar_item
+    
+  # ToDo: REPO
+    # done: products repo
+    # done: categories repo
+    # ToDo: profile repo
+    # done: bottom_bar_item_data
+
+    # ToDo: signup request body
+
+
+# Todo: UI
+  # done: App bar with login and search icon and profile image
+  # done: offers or events 
+    # done: image
+    # done: test h1
+    # done: test h3
+    # done: badge
+    # done: current index
+    # done: Scrollable      
+  # done: categories
+    # done: text h2 
+    # done: text but to see all categories
+    # done: image of category
+    # done: text of category
+  # done: products
+    # done: text h2
+    # done: text but to see all products
+    # done: image of product
+    # done: text of product
+    # done: price of product
+    # done: discount of product
+    # done: main color of product with but to see all colors
+    # done: favorite button
+  # done:  button  of navigation bare
+    # done: home
+    # done: cart
+    # done: categories
+    # done: wishlist
+    # done: profile 
+    # done make it change the current Screen
+# done: Icon Helper
+# add icon helper to get icons easer
+
+#  !

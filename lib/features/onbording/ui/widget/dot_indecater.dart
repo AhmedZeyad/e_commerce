@@ -2,11 +2,13 @@ import '../../../../core/theme/colors.dart';
 import '../../data/onbording_repo.dart';
 import '../../logic/cubit/onbording_cubit.dart';
 import '../../logic/cubit/onbording_state.dart';
-import 'dots.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-class DontIndecader extends StatelessWidget {
-  const DontIndecader({
+
+import 'dots.dart';
+class DontIndicter extends StatelessWidget {
+  const DontIndicter({
     super.key,
   });
 
@@ -17,15 +19,15 @@ class DontIndecader extends StatelessWidget {
         return Container(
           margin: const EdgeInsets.symmetric(vertical: 24),
           decoration: BoxDecoration(
-              color: MyColors.blac_50, borderRadius: BorderRadius.circular(12)),
+              color: MyColors.black_50, borderRadius: BorderRadius.circular(12)),
           width: 50,
           height: 20,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: List.generate(
-              onbordingList.length,
+              onboardingList.length,
               (generator) {
-                return DotsOnbording(
+                return DotsOnboarding(
                   color: generator == state.currentIndex
                       ? MyColors.primaryColor
                       : MyColors.grey_100,

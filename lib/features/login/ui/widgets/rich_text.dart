@@ -28,14 +28,14 @@ class MyRichText extends StatelessWidget {
         text: TextSpan(children: [
           const TextSpan(
               text: 'By login , you agree to our ',
-              style: MyTextStyle.font14SemiregularWhite),
+              style: MyTextStyle.font14SemiBoldWhite),
           TextSpan(
             text: 'Privacy Policy',
             style: MyTextStyle.font14SemiBoldBlue,
             recognizer: tapPrivacyPolicy,
           ),
           const TextSpan(
-              text: ' and ', style: MyTextStyle.font14SemiregularWhite),
+              text: ' and ', style: MyTextStyle.font14SemiBoldWhite),
           TextSpan(
               text: 'Terms & Conditions',
               style: MyTextStyle.font14SemiBoldBlue,
