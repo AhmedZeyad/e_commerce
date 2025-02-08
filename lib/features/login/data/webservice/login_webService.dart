@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import '../../../../core/networking/my_end_point.dart';
 import 'package:http/http.dart';
 
@@ -7,7 +6,7 @@ class LoginWebservice {
   Future<Map<String, dynamic>?> login(
     body,
   ) async {
-     Uri url = Uri.parse(MyEndPoint.baseUrl+ MyEndPoint.lgoIn);
+    Uri url = Uri.parse(MyEndPoint.baseUrl + MyEndPoint.lgoIn);
     // print(url);
     // Response response = await post(url, body: body);
     // send request

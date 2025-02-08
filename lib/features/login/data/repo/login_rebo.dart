@@ -1,5 +1,5 @@
 import '../model/login_model.dart';
-import '../webservice/login_webService.dart';
+import '../webservice/login_webservice.dart';
 
 class LoginRebo {
   LoginWebservice authWebservice;

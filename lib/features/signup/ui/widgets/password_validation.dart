@@ -25,7 +25,7 @@ import 'package:flutter/material.dart';
           ),
           validationRow(hasUppercase, "1 Upper Case "),
           validationRow(hasNumber, "1 Number "),
-          validationRow(hasSpecialCharacter, "1 Special Character "),
+          // validationRow(hasSpecialCharacter, "1 Special Character "),
           validationRow(hasMinLength, "8 Min Length "),
         ],
       ),

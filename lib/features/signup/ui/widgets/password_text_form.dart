@@ -82,8 +82,10 @@ class _PasswordTextFromFildState extends State<PasswordTextFromFild> {
               enabled: hasMinLength == true &&
                   hasUppercase == true &&
                   hasLowercase == true &&
-                  hasNumber == true &&
-                  hasSpecialCharacter == true,
+                  hasNumber == true 
+                  // &&
+                  // hasSpecialCharacter == true
+                  ,
               isObscureText: _isObscureTextConfirm,
               label: 'Confirm Password',
               validator: (s) {
