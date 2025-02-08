@@ -17,20 +17,17 @@ class LoginCubit extends Cubit<LoginState> {
   TextEditingController usernameController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
 
-
-
   login() async {
-    // String username = "mor_2314";
-    // String password = "83r5^_";
-
     emit(LoginLoading());
     try {
-      final LoginModel res = await authRebo.login(usernameController.text, passwordController.text);
+      final LoginModel res = await authRebo.login(
+          usernameController.text, passwordController.text);
+      await saveToken(res.token);
+      await saveToken(res.refresh_token);
       emit(LoginSuccess(res.token!));
     } catch (e) {
       emit(LoginFailure(e.toString()));
     }
-
   }
 
   String? validateUsername(String? value) {
@@ -59,13 +56,14 @@ class LoginCubit extends Cubit<LoginState> {
     //   return '';
     // } else if (!AppRegex.hasSpecialCharacter(value)) {
     //   return '';
-    // } 
-     if (!AppRegex.hasMinLength(value, 8)) {
+    // }
+    if (!AppRegex.hasMinLength(value, 8)) {
       return ' cant be less than 8';
     }
 
     return null;
   }
+
   @override
   Future<void> close() {
     usernameController.dispose();
@@ -73,5 +71,3 @@ class LoginCubit extends Cubit<LoginState> {
     return super.close();
   }
 }
-
-

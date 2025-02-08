@@ -15,7 +15,7 @@ class EcomerceApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(scaffoldBackgroundColor: MyColors.backgroundColor),
       // initialRoute: Routes.onboarding,
-      initialRoute: Routes.home,
+      initialRoute: Routes.login,
       onGenerateRoute: appRouter.onGenerateRoute,
     );
   }
